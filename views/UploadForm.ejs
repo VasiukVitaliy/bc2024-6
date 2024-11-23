@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h2>Upload Form</h2>
+
+  <form method="post" action="/users/add">
+    <label for="note_name_input">Note Name:</label><br>
+    <input type="text" id="note_name_input" name="note_name" value="<%= locals.name_note %>"><br><br>
+    <button type="submit">Upload</button>
+</form>
+
+  <p>If you click the "Submit" button , the form-data will be sent to a page called "".</p>
+
+</body>
+
+</html>
