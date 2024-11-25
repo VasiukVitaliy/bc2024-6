@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    ports: 
+      - "8080:8080"  # Виправлений порт
+      - "9229:9229"
+    command: ["nodemon", "app/main.js", "--host", "0.0.0.0", "--cache", "./cache", "--port", "8080"]
+
